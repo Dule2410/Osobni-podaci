@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <meta charset="UTF-8">
+    <title>Osobni podaci</title>
+</head>
+<body>
+<h1>Osobni podaci</h1>
+<br>
+<form method="get" action="Obrada.php" enctype="text/plain">
+    <input type="text" name="ime" maxlength="50" size="10" placeholder="Ime"/>
+    Ime
+    <br><br>
+    <input type="text" name="prezime" maxlength="50" size="10" placeholder="Prezime"/>
+    Prezime
+    <br><br>
+    <h3>Idete li u školu?</h3>
+    <input type="radio" name="skola" value="DA" /> DA
+    <br>
+    <input type="radio" name="skola" value="NE" /> NE
+    <br><br>
+    <input type="password" name="oib" maxlength="50" size="20" /> OIB
+    <br><br>
+    <select multiple="multiple" name="predmet">
+        <option value="matematika"> matematika </option>
+        <option value="fizika"> fizika </option>
+        <option value="engleski"> engleski </option>
+        <option value="hrvatski"> hrvatski </option>
+    </select>
+    Najdrazi predmet
+    <br><br>
+    Boja
+    <select name="boja">
+        <option value="crvena" selected="selected"> Crvena </option>
+        <option value="zelena"> Zelena </option>
+        <option value="plava"> Plava </option>
+        <option value="crna"> Crna </option>
+    </select>
+    <br><br>
+    <button type="submit" name="poslati"> SUBMIT </button>
+</form>
+</body>
+</html>
