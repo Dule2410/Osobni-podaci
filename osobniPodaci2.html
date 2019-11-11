@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Osobni podaci</title>
+</head>
+<body>
+<h1>Osobni podaci</h1>
+<br>
+<form method="post" action="Obrada2.php">
+    Ime: <input type="text" name="user_name" maxlength="50" size="10" placeholder="Ime">
+    <br><br>
+    Prezime: <input type="text" name="user_surname" maxlength="50" size="10" placeholder="Prezime">
+    <br><br>
+    Godina rodenja: <input type="date" name="birth_date">
+    <br><br>
+    Zavrsena skola:
+    <input type="radio" name="skola" value="strukovna" > Strukovna
+    <input type="radio" name="skola" value="gimnazija" > Gimnazija
+    <br><br>
+    Adresa: <input type="text" name="adress" maxlength="90" size="30" placeholder="Adresa">
+    <br><br>
+    Spol:
+    <input type="radio" name="spol" value="Musko" > Musko
+    <input type="radio" name="spol" value="Zensko" > Zensko
+    <input type="radio" name="spol" value="Ostalo" > Ostalo
+    <br><br>
+    <select name="grad">
+        <option value="Zagreb" selected="selected"> Zagreb </option>
+        <option value="Split"> Split </option>
+        <option value="Rijeka"> Rijeka </option>
+        <option value="Zadar"> Zadar </option>
+        <option value="Osijek"> Osijek </option>
+    </select>
+    <br><br>
+    <select multiple="multiple" name="hobiji[]">
+        <option value="sport"> sport </option>
+        <option value="ucenje"> ucenje </option>
+        <option value="teretana"> teretana </option>
+        <option value="programiranje"> programiranje </option>
+        <option value="igrice"> igrice </option>
+    </select>
+    <br><br>
+    <textarea name="comment" rows="5" cols="50"> Napomena </textarea>
+    <br><br>
+    <button type="submit" name="poslati"> SUBMIT </button>
+</form>
+</body>
+</html>
